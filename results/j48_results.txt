@@ -1,0 +1,48 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     amazon_sentiment_clean-weka.filters.unsupervised.attribute.StringToWordVector-Rfirst--W1000-prune-rate-1.0-I-N0-L-stemmerweka.core.stemmers.NullStemmer-stopwords-handlerweka.core.stopwords.Null-M1-tokenizerweka.core.tokenizers.WordTokenizer -delimiters " \r\n\t.,;:\'\"()?!"-weka.filters.unsupervised.attribute.StringToWordVector-Rfirst-W1000-prune-rate-1.0-I-N0-L-stemmerweka.core.stemmers.NullStemmer-stopwords-handlerweka.core.stopwords.Null-M1-tokenizerweka.core.tokenizers.WordTokenizer -delimiters " \r\n\t.,;:\'\"()?!"
+Instances:    716
+Attributes:   2
+              text
+              sentiment
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+: positive (716.0/216.0)
+
+Number of Leaves  : 	1
+
+Size of the tree : 	1
+
+
+Time taken to build model: 0.02 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         500               69.8324 %
+Incorrectly Classified Instances       216               30.1676 %
+Kappa statistic                          0     
+Mean absolute error                      0.4213
+Root mean squared error                  0.459 
+Relative absolute error                 99.9423 %
+Root relative squared error             99.9999 %
+Total Number of Instances              716     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    1.000    0.698      1.000    0.822      ?        0.494     0.696     positive
+                 0.000    0.000    ?          0.000    ?          ?        0.494     0.299     negative
+Weighted Avg.    0.698    0.698    ?          0.698    ?          ?        0.494     0.576     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 500   0 |   a = positive
+ 216   0 |   b = negative
+
